@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import C1 from "./C1"
+import React from 'react';
 
 function App() {
+  let [value1,setData]=React.useState(0)
+  
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <C1 value={value1} data1={setData}></C1>
     </div>
   );
 }
